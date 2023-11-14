@@ -1,2 +1,2 @@
 # portfolio
-![image](https://github.com/DenMitter/portfolio/assets/104051796/02fd8d49-2871-4cc9-9b50-74b2c078be34)
+![image](https://github.com/DenMitter/portfolio/assets/104051796/5759680d-270f-426f-8a14-b4ab4ea0ae80)
