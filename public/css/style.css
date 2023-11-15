@@ -359,6 +359,7 @@ footer .subtitle {
 .footer__info-me_email {
     color: var(--gray);
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
     margin-bottom: 12px;
 }
@@ -384,6 +385,19 @@ footer .subtitle {
     .square {display: none;}
 }
 @media (max-width: 768px) {
+    .container {padding: 0 35px;}
+    .title::after {max-width: 10%;}
+
+    /* Navigation */
+    .mobile-menu-container {display: block;}
+    .burger-menu {display: flex;}
+    #compNavigation {display: none;}
+    .nav__item {font-size: 21px;}
+    .menu ul li {margin-bottom: 14px;}
+
+    /* Quote */
+    .quote {max-width: 100%;}
+
     /* Projects */
     .projects__card {max-width: 100%;}
     .projects__card-description {font-size: 14px;}
@@ -395,13 +409,6 @@ footer .subtitle {
 
     /* About me */
     .about-me__image {display: none;}
-
-    /* Navigation */
-    .mobile-menu-container {display: block;}
-    .burger-menu {display: flex;}
-    #compNavigation {display: none;}
-    .nav__item {font-size: 21px;}
-    .menu ul li {margin-bottom: 14px;}
 
     /* Footer */
     .footer__media {
