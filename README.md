@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [Setup](#setup)
-- [Create a new `.env`](#create-a-new-`.env`)
+- [Create a new `.env`](#create-a-new-env)
 - [Generate key](#generate-key)
 - [Start migrate](#start-migrate)
 - [Make admin account](#make-admin-account)
