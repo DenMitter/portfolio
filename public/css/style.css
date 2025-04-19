@@ -18,7 +18,7 @@ img {display: block;max-width: 100%;height: auto;user-select: none;}
 .title {
     position: relative;
     font-size: 32px;
-} 
+}
 .title::before {
     content: '#';
     color: var(--primary);

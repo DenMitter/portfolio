@@ -10,10 +10,11 @@ class Project extends Model
 {
     use HasFactory;
     use SoftDeletes;
-    
+
     protected $guarded = false;
 
-    public function tags() {
+    public function tags()
+    {
         return $this->belongsToMany(Tag::class, 'project_tags', 'project_id', 'tag_id');
     }
 }

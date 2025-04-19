@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('preview_image');
             $table->boolean('is_published')->default(0);
             $table->string('description');
+            $table->string('view_link')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -53,7 +53,7 @@
         <!-- Project -->
         @foreach ($projects as $project)
             <div class="projects__card" data-tags="{{ json_encode($project->tags->pluck('id')) }}">
-                <img src="{{ 'storage/' . $project->preview_image }}" alt="Card image">
+                <img src="{{ $project->preview_image }}" alt="Card image">
                 <div class="projects__card-tehnology">
                     @foreach ($tags as $tag)
                         @if (is_array($project->tags->pluck('id')->toArray()) && in_array($tag->id, $project->tags->pluck('id')->toArray()))
@@ -127,14 +127,14 @@
             <p class="subtitle">
                 Hello, i’m Bogdan!<br><br>
 
-                I’m a self-taught fullstack developer based in Vinnystsia, Ukraine. 
-                I can develop responsive websites from scratch and raise 
+                I’m a self-taught fullstack developer based in Vinnystsia, Ukraine.
+                I can develop responsive websites from scratch and raise
                 them into modern user-friendly web experiences.<br><br>
 
-                Transforming my creativity and knowledge into a websites 
-                has been my passion for over a year. 
-                I have been helping various clients to establish their 
-                presence online. I always strive to learn about the 
+                Transforming my creativity and knowledge into a websites
+                has been my passion for over a year.
+                I have been helping various clients to establish their
+                presence online. I always strive to learn about the
                 newest technologies and frameworks.
             </p>
             <div class="buttons">

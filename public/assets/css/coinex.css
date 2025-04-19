@@ -17,6 +17,13 @@
 small, .small {
   color: #BFBFBF; }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 :root {
   --bs-blue: #3a57e8;
   --bs-indigo: #6610f2;
@@ -14694,7 +14701,7 @@ small, .small, .small {
   border-radius: 50rem; }
 
 /*
- * Background color 
+ * Background color
  */
 .bg-soft-primary {
   color: #e6881a;
