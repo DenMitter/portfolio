@@ -40,8 +40,14 @@ class ProjectListRows extends Rows
             Relation::make('project.tag_ids')
                 ->title('Теги')
                 ->fromModel(Tag::class, 'title')
+                ->display('title')
                 ->multiple()
-                ->chunk(50),
+                ->chunk(50)
+                ->value(
+                    isset($this->query['project']) && $this->query['project']->tags
+                        ? $this->query['project']->tags->pluck('id')->toArray()
+                        : []
+                ),
 
             Picture::make('project.preview_image')
                 ->title('Фото'),
