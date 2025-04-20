@@ -30,8 +30,7 @@ class ProjectListRows extends Rows
             Group::make([
                 Input::make('project.view_link')
                     ->title('Посилання')
-                    ->placeholder('https://example.com')
-                    ->required(),
+                    ->placeholder('https://example.com'),
 
                 CheckBox::make('project.is_published')
                     ->title('Чи публічний проект')

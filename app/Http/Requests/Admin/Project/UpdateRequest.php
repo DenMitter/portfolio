@@ -15,7 +15,7 @@ class UpdateRequest extends FormRequest
             'project.tag_ids' => 'nullable|array',
             'project.tag_ids.*' => 'nullable|integer|exists:tags,id',
             'project.description' => 'required|string',
-            'project.view_link' => 'string',
+            'project.view_link' => 'nullable|string',
         ];
     }
 }

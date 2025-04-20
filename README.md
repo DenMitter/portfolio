@@ -8,6 +8,7 @@
 - [Create a new `.env`](#create-a-new-env)
 - [Generate key](#generate-key)
 - [Start migrate](#start-migrate)
+- [Start seed](#start-seed)
 - [Make admin account](#make-admin-account)
 
 ## Setup
@@ -41,6 +42,12 @@ php artisan key:generate
 
 ```bash
 php artisan migrate
+```
+
+### Start seed
+
+```bash
+php artisan db:seed
 ```
 
 ### Make admin account
